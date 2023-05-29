@@ -11,7 +11,7 @@ export default async function Dashboard() {
     redirect('/api/auth/signin');
   }
 
-  console.log('session', session);
+  // console.log('session', session);
 
   const currentUserEmail = session?.user?.email!;
 
