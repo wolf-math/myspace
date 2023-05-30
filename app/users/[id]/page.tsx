@@ -31,7 +31,7 @@ export default async function UserProfile({ params }: Props) {
       <h3>Bio</h3>
       <p>{bio}</p>
       {/* @ts-ignore */}
-      <FollowButton targetUserId={params.id} />
+      {/* <FollowButton targetUserId={params.id} /> */}
     </div>
   );
 }
