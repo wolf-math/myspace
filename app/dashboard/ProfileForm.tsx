@@ -13,6 +13,8 @@ export default function ProfileForm({ user }: any) {
       image: formData.get('image')
     };
 
+    console.log(body);
+
     const res = await fetch('/api/user', {
       method: 'PUT',
       body: JSON.stringify(body),
