@@ -7,6 +7,8 @@ export async function PUT(req: Request) {
   const session = await getServerSession(authOptions);
   const currentUserEmail = session?.user?.email!;
 
+  console.log('currentUserEmail', currentUserEmail);
+
   const data = await req.json();
   data.age = Number(data.age);
 
